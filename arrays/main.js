@@ -10,10 +10,20 @@ function lessThanNumber(arr, target) {
     return count;
 }
 
-function sumAll(arr) {
-    let sum = 0;
+/* Take an array of integers and two separate integers, and multiply 
+all the integers in the array whose value is less than the first 
+separate integer by the value of the second separate integer argument */
+
+function dMultiplyLessThanNumber(arr, target, multiplier) {
     for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
+        if (arr[i] < target) arr[i] *= multiplier;
     }
-    return sum;
+    return arr;
+}
+
+function cMultiplyLessThanNumber(arr, target, multiplier) {
+    let
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < target) arr[i] *= multiplier;
+    }
 }
